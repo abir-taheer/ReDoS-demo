@@ -15,7 +15,7 @@ You can download it here: [https://nodejs.org/en/](https://nodejs.org/en/)
 make install
 ```
 
-2. Try out the make commands.
+2. Try out the make commands. Run `make help` to see example use cases for the available commands.
 
 | command | description                                                                           |
 | ------- | ------------------------------------------------------------------------------------- |
