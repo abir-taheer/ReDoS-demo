@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>ReDoS Demo</title>
-  </head>
-  <body style="text-align: center">
-    <h1>Convert (hours, minutes, or seconds) to days!</h1>
-    <label for="text">Text: </label
-    ><input id="text" placeholder="1000 seconds" style="width: 900px" />
-    <br />
-    <button>Submit</button>
+    <head>
+        <meta charset="UTF-8" />
+        <title>ReDoS Demo</title>
+    </head>
+    <body style="text-align: center">
+        <h1>
+            Convert (hours, minutes, or seconds) to days!
+        </h1>
+        <label for="text">Text: </label
+        ><input
+            id="text"
+            placeholder="1000 seconds"
+            style="width: 900px"
+        />
+        <br />
+        <button>Submit</button>
 
-    <script>
-      const input = document.querySelector("#text");
-      const button = document.querySelector("button");
+        <script>
+            const input = document.querySelector("#text");
+            const button = document.querySelector("button");
 
-      button.addEventListener("click", () => {
-        fetch(`/calculate?str=${encodeURIComponent(input.value)}`)
-          .then((res) => res.json())
-          .then((a) => alert(JSON.stringify(a, null, 2)))
-          .catch((a) => alert(JSON.stringify(a, null, 2)));
-      });
-    </script>
-  </body>
+            button.addEventListener("click", () => {
+                fetch(
+                    `/calculate?str=${encodeURIComponent(
+                        input.value
+                    )}`
+                )
+                    .then((res) => res.json())
+                    .then((a) =>
+                        alert(JSON.stringify(a, null, 2))
+                    )
+                    .catch((a) =>
+                        alert(JSON.stringify(a, null, 2))
+                    );
+            });
+        </script>
+    </body>
 </html>

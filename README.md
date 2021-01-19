@@ -25,4 +25,4 @@ make install
 
 ### Tips
 
-- For the server, try out values like `10000 seconds`, `2000000 hours`, and `22222222222222333333222 secon`
+-   For the server, try out values like `10000 seconds`, `2000000 hours`, and `22222222222222333333222 secon`
